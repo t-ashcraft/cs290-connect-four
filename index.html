@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connect 4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-wrapper">
+    <h1>Connect 4</h1>
+    <p class="subtitle">You are Yellow. Red is the AI.</p>
+
+    <div class="controls" aria-label="Column controls">
+      <button class="col-btn" data-col="0" aria-label="Drop in column 1">1</button>
+      <button class="col-btn" data-col="1" aria-label="Drop in column 2">2</button>
+      <button class="col-btn" data-col="2" aria-label="Drop in column 3">3</button>
+      <button class="col-btn" data-col="3" aria-label="Drop in column 4">4</button>
+      <button class="col-btn" data-col="4" aria-label="Drop in column 5">5</button>
+      <button class="col-btn" data-col="5" aria-label="Drop in column 6">6</button>
+      <button class="col-btn" data-col="6" aria-label="Drop in column 7">7</button>
+    </div>
+
+    <section id="board" class="board" aria-label="Connect 4 board"></section>
+
+    <div class="status-row">
+      <p id="status" class="status">Your turn (Yellow)</p>
+      <button id="restart" class="restart" type="button">Restart</button>
+    </div>
+
+    <p class="hint">Click a numbered column button or press keys 1-7 to drop a yellow disk.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
