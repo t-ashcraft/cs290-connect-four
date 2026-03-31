@@ -12,7 +12,7 @@
 <body>
   <main class="game-wrapper">
     <h1>Connect 4</h1>
-    <p class="subtitle">You are Yellow. Red is the AI.</p>
+    <p class="subtitle">Choose a mode below. Yellow always starts.</p>
 
     <div class="controls" aria-label="Column controls">
       <button class="col-btn" data-col="0" aria-label="Drop in column 1">1</button>
@@ -26,12 +26,16 @@
 
     <section id="board" class="board" aria-label="Connect 4 board"></section>
 
-    <div class="status-row">
-      <p id="status" class="status">Your turn (Yellow)</p>
-      <button id="restart" class="restart" type="button">Restart</button>
-    </div>
+    <p id="status" class="status">Yellow turn</p>
 
-    <p class="hint">Click a numbered column button or press keys 1-7 to drop a yellow disk.</p>
+    <p class="hint">Click a numbered column button or press keys 1-7.</p>
+
+    <div class="mode-controls" aria-label="Game mode controls">
+      <button id="mode-2p" class="mode-btn" type="button">2 player</button>
+      <button id="mode-easy" class="mode-btn" type="button">easy</button>
+      <button id="mode-hard" class="mode-btn" type="button">hard</button>
+      <button id="mode-2ai" class="mode-btn" type="button">2 AI</button>
+    </div>
   </main>
 
   <script src="script.js"></script>
